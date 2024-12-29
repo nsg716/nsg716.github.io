@@ -1,5 +1,5 @@
 ## 💡 **Introduce**
-### **“안녕하세요 Back-end Development를 지망하는 나성곤입니다.”**
+### **“안녕하세요 백엔드 개발자를 지망하는 나성곤입니다.”**
 
 - 끊임없이 고뇌하여 지금보다 한 발짝 더 나아가는 개발자
 - 문제를 규명하고 해결책을 구현하는 개발자
@@ -7,9 +7,9 @@
 
 살아가면서 느끼는 불편함과 문제들이 세상을 바꿀 수 있는 원동력이라고 생각합니다.
 
-제가 지향하는 개발자는 불편함을 정의하고, 그 원인을 규명하여,  문제를 정확하게 정의하는 것을 기술로 보고,그 과정과 해결책을 구현하는 것이 개발입니다.  
+불편함을 발견하고, 그 원인을 규명하여 문제를 명확히 정의하는 것을 시작점으로 보며, 그 과정과 해결책을 구현하는 것이 제가 지향하는 개발자입니다.
 
-또한, 기존의 방식과 다른 접근으로 해결책을 찾는 것이 개발자로써 증명하는 단계라고 생각합니다.
+또한, 기존의 방식에서 벗어난 창의적인 해결책을 찾아 구현하는 것이 자신의 가치를 증명하는 방법이라고 생각합니다.
 
 - ✉️ email : 1029cjswo@naver.com
 - 📞 phone : 010-8330-3894
@@ -216,7 +216,7 @@
 
       <br><br>
 - **(2024.5~2024.6) 국내 개인 경제 상태 및 위치 데이터 분석 프로젝트**
-   - 프로젝트 주제 :Economic Status
+   - 프로젝트 주제 : Economic Status
    - 참여 인원 (역할) : 개인 (全)
    - 제작기간 :2024.05.15~2024.06.12
    - 제작의도 :
@@ -336,4 +336,21 @@
        -   국내로 들어오는 해외 시장 물품에 대한 어떠한 조치도 없는 것이 가장 아쉬운 점이라고 생각합니다.
        -   심사위원 평가 : LLM을 보다 다양한 측면으로 활용을 해보는 것을 추천 
 
-     
+
+    <br><br>
+- **(2024.11~2024.12) AI/ML 모델 성능 입력 게시판 프로젝트**
+     - 프로젝트 주제 : AI/ML 성능에 대하여 입력하고 이를 관리하는 게시판을 제작하는 것
+     - 참여 인원 (역할) : 개인 (全) 
+     - 제작기간 : 2024.11.12~2024.12.18
+     - 제작의도 : 
+     - Skils :
+       - S/W 제작 환경 : ![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white)
+       - Log 설정 : ![Log4j2](https://img.shields.io/badge/Log4j2-E75649?style=flat-square&logo=SQL&logoColor=white)
+       - Model : ![java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![mysql](https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white)
+       - Controller: ![spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=Hibernate&logoColor=white)
+       - Views : ![html](https://img.shields.io/badge/HTML5-E34F26?style=flat-squar&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS-239120?&style=flat-squar&logo=css3&logoColor=white) ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-squar&logo=JavaScript&logoColor=white) ![RESTAPI](https://img.shields.io/badge/일부-RESTAPI-41454A?style=flat-square&logo=RESTAPI&logoColor=white)
+     - 주요 기능, 기술 :
+     - 소프트웨어 구조도 
+     - 프로젝트 결론 :
+       - 배운점 
+       - 아쉬운점   
