@@ -306,7 +306,7 @@
        - 중소기업의 해외 시장 진출 지원 및 수입/수출 절차 간소화
   
    - 소프트웨어 구조도 (데이터 분석, 상품 추천 알고리즘, HS Code - KAN 코드 매칭, 정리):
- 
+
      <table style="border:none; width: 100%;">
           <tr>
               <td style="border: none; text-align: center;">
@@ -374,25 +374,24 @@
           - 웹 사이트 이용자 역할: 시스템은 두 가지 이용자 역할인 User(사용자)와 Admin(관리자)을 통해 운영되며, 각 역할에 따라 고유의 기능과 권한을 부여하여 효율성을 극대화합니다.
             
      - 소프트웨어 구조도
-      <table style="border:none; width: 100%;">
-            <tr>
-                <td style="border: none; text-align: center;">
-                   <img src="./img/18.png" width="366" height="200"/>
-                </td>
-                <td style="border: none; text-align: center;">  
-                   <img src="./img/19.png" width="366" height="200"/>    
-                </td>
-            </tr>
-            <tr>
-                <td style="border: none; text-align: center;">
-                  <img src="./img/20.png" width="366" height="200"/>
-                </td>
-                <td style="border: none; text-align: center;">
-                  <img src="./img/21.png" width="366" height="200"/>
-                </td>
-            </tr>
-       </table> 
-       
+        <table style="border:none; width: 100%;">
+              <tr>
+                  <td style="border: none; text-align: center;">
+                     <img src="./img/18.png" width="366" height="200"/>
+                  </td>
+                  <td style="border: none; text-align: center;">  
+                     <img src="./img/19.png" width="366" height="200"/>    
+                  </td>
+              </tr>
+              <tr>
+                  <td style="border: none; text-align: center;">
+                    <img src="./img/20.png" width="366" height="200"/>
+                  </td>
+                  <td style="border: none; text-align: center;">
+                    <img src="./img/21.png" width="366" height="200"/>
+                  </td>
+              </tr>
+         </table>    
      - 프로젝트 결론 :
        - 배운점
          - CRUD에 대하여 전반적으로 이해를 할 수 있었으며, AOP를 통해 Log42j를 통한 로그 관리를 배울 수 있었습니다.
