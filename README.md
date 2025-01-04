@@ -342,15 +342,65 @@
      - 프로젝트 주제 : AI/ML 성능에 대하여 입력하고 이를 관리하는 게시판을 제작하는 것
      - 참여 인원 (역할) : 개인 (全) 
      - 제작기간 : 2024.11.12~2024.12.18
-     - 제작의도 : 
+     - 제작의도 :
+       - 기말고사 과제로 CRUD를 구현하는 과정에서 세션에 대한 개념을 응용하는 것이 목표였습니다.
+       - 세션에 따른 기능을 분리하고 이에 따른 CRUD 기능도 분리를 하여 제작을 하여 다른 세션에서 동작을 하더라도 컨트롤러에 의해 하나의 엔티티에 저장하는 것을 구현하는 것이 목표였습니다.
+       - 테스트를 사용할 때, 디버깅 품질 향상을 위해 Mock를 사용하고 Mock에서 사용하는 세션을 사용하여 테스트를 진행을 하였습니다.
      - Skils :
        - S/W 제작 환경 : ![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white)
        - Log 설정 : ![Log4j2](https://img.shields.io/badge/Log4j2-E75649?style=flat-square&logo=SQL&logoColor=white)
        - Model : ![java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![mysql](https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white)
        - Controller: ![spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=Hibernate&logoColor=white)
        - Views : ![html](https://img.shields.io/badge/HTML5-E34F26?style=flat-squar&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS-239120?&style=flat-squar&logo=css3&logoColor=white) ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-squar&logo=JavaScript&logoColor=white) ![RESTAPI](https://img.shields.io/badge/일부-RESTAPI-41454A?style=flat-square&logo=RESTAPI&logoColor=white)
+
      - 주요 기능, 기술 :
-     - 소프트웨어 구조도 
+       
+        - 사용자 기능
+          
+          - 회원가입 및 데이터 관리: 사용자는 시스템에 회원가입을 통해 계정을 생성할 수 있으며, 자신의 데이터에 대해 조회, 수정, 소프트 삭제(상태 변경)를 수행할 수 있습니다.
+          - 리포트 생성 및 관리: 사용자는 AI 및 ML 모델의 정량적 자료를 기반으로 리포트를 생성할 수 있으며, 생성한 리포트에 대해 조회, 수정, 소프트 삭제 기능을 이용할 수 있습니다.
+          - 모델 리스트 조회: 사용자는 시스템에 등록된 모델 리스트를 조회하고, 각 모델에 대한 리포트를 생성할 수 있습니다.
+            
+        - 관리자 기능
+          
+          - 사용자 관리: 관리자는 시스템 내 사용자를 생성, 조회, 하드 삭제할 수 있습니다. 단, 관리자는 다른 관리자의 정보에 대해서는 생성, 조회, 수정, 삭제를 할 수 없습니다.
+          - 모델 관리: 관리자는 AI 및 ML 모델을 생성, 조회, 하드 삭제할 수 있습니다.
+          - 리포트 관리: 관리자는 생성된 리포트를 조회하고, 필요 시 하드 삭제할 수 있는 권한을 가집니다.
+            
+        - 시스템 목적 및 활용
+          
+          - 정량적 평가 및 비교: 본 시스템은 AI 및 ML 모델의 성능을 정량적으로 평가하여, 더 우수한 모델을 한눈에 비교할 수 있는 기능을 제공합니다.
+          - 효율적인 데이터 관리: 사용자는 리포트를 통해 모델의 성능 데이터를 관리하며, 관리자는 이를 기반으로 사용자 및 모델을 효과적으로 관리합니다.
+          - 웹 사이트 이용자 역할: 시스템은 두 가지 이용자 역할인 User(사용자)와 Admin(관리자)을 통해 운영되며, 각 역할에 따라 고유의 기능과 권한을 부여하여 효율성을 극대화합니다.
+            
+     - 소프트웨어 구조도
+      <table style="border:none; width: 100%;">
+            <tr>
+                <td style="border: none; text-align: center;">
+                   <img src="./img/18.png" width="366" height="200"/>
+                </td>
+                <td style="border: none; text-align: center;">  
+                   <img src="./img/19.png" width="366" height="200"/>    
+                </td>
+            </tr>
+            <tr>
+                <td style="border: none; text-align: center;">
+                  <img src="./img/20.png" width="366" height="200"/>
+                </td>
+                <td style="border: none; text-align: center;">
+                  <img src="./img/21.png" width="366" height="200"/>
+                </td>
+            </tr>
+       </table> 
+       
      - 프로젝트 결론 :
-       - 배운점 
-       - 아쉬운점   
+       - 배운점
+         - CRUD에 대하여 전반적으로 이해를 할 수 있었으며, AOP를 통해 Log42j를 통한 로그 관리를 배울 수 있었습니다.
+         - Maven에 대한 프로젝트를 해볼 수 있었으며, JPA 기능을 일부 사용해 볼 수 있었습니다.
+         - 이클립스 환경에서 Spring 6.1.14 버전을 사용하여 스프링 프레임워크 없이 스프링 기능을 사용해볼 수 있었습니다.
+         - 테스트 시나리오를 만들고 프로젝트를 만들면서 프로젝트 제작 속도에 조금 더 향상이 될 수 있었습니다.
+         - 세션에 따른 기능 분리를 통하여 사용자에게 데이터에 따른 세션을 달리 부여하는 방법을 배울 수 있었습니다.       
+       - 아쉬운점
+         - 보안에 대해서 적용해보지 못한 것들이 있어서 아쉬웠습니다. (비밀번호 검증 기능은 넣었지만, Spring Security를 실습해보지 못했습니다.)
+         - UX에 대하여 너무 불필요하게 제작된 경우가 많았습니다.
+         - 테스트를 하는 과정에서 일부 테스트가 미흡하게 작성되었던 점이 있어서 아쉽습니다.    
