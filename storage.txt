@@ -1,1 +1,27 @@
 
+<!--
+- (3) passQuick 시스템 구축 프로젝트 
+  - 개요 : Spring 기반의 사내 전자결재 시스템 passQuick 개발 초기 환경 세팅 및 MongoDB 기반 구조 설정 작업을 수행하였다.
+  - 기간 : 4월 17일 ~ 4월 21일 ( 총 3일 )
+  
+  - 담당 업무
+    
+        JDK, MongoDB, Eclipse, VirtualBox 기반 개발 환경 구축
+        MongoDB 사용자 매뉴얼 작성
+        프로젝트 개선사항 정리 및 기능 목록 수집
+        Windows VM 기반의 최적화된 개발환경 설정
+
+  - Skils
+    
+        MongoDB 8.0.8, 
+        VirtualBox 7.1.6
+        Java : 8 > 17 
+        Rocky 9.2
+        STS : 2.1.2 -> 3.3.10
+
+  - 성과 및 기여
+    
+        MongoDB 기반 업무 시스템의 개발 환경 구축
+        개발자 매뉴얼 문서화 경험
+        RAM 문제 해결을 통한 환경 안정성 확보
+-->
