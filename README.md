@@ -344,6 +344,74 @@
 
 
 ## 🛠 주요 프로젝트
+- **(2025.11.17~2025.12.23) 도서관리 시스템 개발 및 자동 배포 환경 구축 프로젝트**
+     - 프로젝트 주제 : AI 기반 도서 창작 플랫폼 개발 및 클라우드 네이티브 자동 배포 환경 구축
+     - 참여 인원 (역할) : 팀 프로젝트 (7인) / 풀스택 개발 및 DevOps 조장 
+     - 제작기간 : 2025.11.17~2025.12.23
+     - 제작의도 :
+       - AI 멀티모달 기술의 실무 응용: OpenAI DALL·E API를 연동하여 사용자의 텍스트 데이터를 시각적 도서 표지로 즉각 변환하는 감성적 UX 제공을 목표로 함.
+       - 배포 프로세스의 완전 자동화: 수동 빌드 및 업로드 방식의 인적 오류를 제거하고, GitHub Push만으로 운영 환경(EKS/EC2)에 즉시 반영되는 CI/CD 파이프라인 구축을 목표로 함.
+       - 클라우드 인프라 설계 역량 강화: 타 팀과의 자원 간섭을 배제한 전용 VPC 설계 및 EKS(Kubernetes)의 고가용성 아키텍처(Multi-AZ, Self-healing) 구현을 목표로 함.
+     - Skils :
+       - S/W 제작 환경 : ![WebStorm](https://img.shields.io/badge/WebStorm-000000?style=flat-square&logo=WebStorm&logoColor=white)  ![intellijidea](https://img.shields.io/badge/intellijidea-000000?style=flat-square&logo=intellijidea&logoColor=white) 
+ 
+       - Frontend: ![react](https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=white) ![vite](https://img.shields.io/badge/vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![mui](https://img.shields.io/badge/mui-007FFF?style=flat-square&logo=mui&logoColor=white) ![axios](https://img.shields.io/badge/axios-5A29E4?style=flat-square&logo=axios&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white) 
+       - Backend: ![java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![springboot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=Springboot&logoColor=white) ![h2database](https://img.shields.io/badge/h2database-09476B?style=flat-square&logo=h2database&logoColor=white) 
+       - AI Integration : ![OpenAI DALL·E 3](https://img.shields.io/badge/OpenAI_DALL·E_3-000000?style=flat-square&logo=OpenAI_DALL·E_3&logoColor=white)
+       - AWS Cloud & Infrastructure: 
+         - Computing: ![Amazon EKS](https://img.shields.io/badge/Amazon_EKS-F58C04?style=flat-square&logo=Amazon_EKS&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/Amazon_EC2-F58C04?style=flat-square&logo=Amazon_EC2&logoColor=white) ![Amazon Auto Scaling](https://img.shields.io/badge/Amazon_Auto_Scaling-F58C04?style=flat-square&logo=Amazon_Auto_Scaling&logoColor=white)  
+         - Networking: ![Amazon VPC](https://img.shields.io/badge/Amazon_VPC-915BEF?style=flat-square&logo=Amazon_VPC&logoColor=white) ![Amazon Subnet](https://img.shields.io/badge/Amazon_Subnet-E4F3F9?style=flat-square&logo=Amazon_Subnet&logoColor=white) ![Amazon ALB](https://img.shields.io/badge/Amazon_ALB-F58C04?style=flat-square&logo=Amazon_ALB&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/Amazon_CloudFront-E05243?style=flat-square&logo=Amazon_CloudFront&logoColor=white) ![Amazon S3](https://img.shields.io/badge/Amazon_S3-3F8624?style=flat-square&logo=Amazon_S3&logoColor=white)
+         - Monitoring: ![Amazon CloudWatch](https://img.shields.io/badge/Amazon_CloudWatch-E50A75?style=flat-square&logo=Amazon_CloudWatch&logoColor=white)
+       - CI/CD: ![Github](https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white) ![Amazon CodePipeline](https://img.shields.io/badge/Amazon_CodePipeline-70963B?style=flat-square&logo=Amazon_CodePipeline&logoColor=white) ![Amazon ECR](https://img.shields.io/badge/Amazon_ECR-F58C04?style=flat-square&logo=Amazon_ECR&logoColor=white)
+         
+     - 주요 기능, 기술 :
+       
+        - 사용자 기능   
+          - 도서 창작 및 CRUD: 사용자는 도서 제목과 본문을 입력하여 신규 도서를 등록(Create)하고, 저장된 데이터를 조회(Read), 수정(Update), 삭제(Delete) 가능.
+          - AI 표지 자동 생성: OpenAI DALL·E 3 API 연동을 통해 입력된 도서 내용을 분석하여 최적화된 시각적 표지 이미지를 실시간으로 생성 및 DB 저장.
+          - 무중단 서비스 이용: 롤링 업데이트 배포 방식을 통해 신규 기능 반영 중에도 끊김 없는 서비스 이용 환경 제공.
+            
+        - DevOps 및 인프라 기능
+          - 완전 자동화 CI/CD: GitHub 코드 푸시 시 CodeBuild를 통해 Docker 이미지 빌드 및 ECR 푸시, EKS 재배포까지 전 과정 자동 수행.
+          - 고가용성 아키텍처: 2개 가용 영역(AZ)에 퍼블릭 서브넷을 분산하고 워커 노드 2대 및 Deployment Replica 2대를 유지하여 시스템 안정성 확보.
+          - 통합 모니터링 시스템: CloudWatch Container Insights를 구축하여 인프라 자원 사용량 및 애플리케이션 로그를 실시간 가시화.
+
+        - 시스템 목적 및 활용
+          - 창작 생산성 향상: 수동 이미지 검색 과정을 AI 자동 생성으로 대체하여 콘텐츠 제작 시간을 약 30배(5분 → 10초) 단축.
+          - 운영 효율성 극대화: 수동 배포 환경(As-Is) 대비 배포 시간을 약 13배(20분 → 90초) 단축하여 개발-운영 피드백 루프 최적화.
+          - 
+     - 소프트웨어 구조도 :
+         <table style="border:none; width: 100%;">
+              <tr>
+                  <td style="border: none; text-align: center;">
+                     <img src="./img/22.png" width="366" height="200"/>
+                  </td>
+                  <td style="border: none; text-align: center;">  
+                     <img src="./img/23.png" width="366" height="200"/>    
+                  </td>
+              </tr>
+              <tr>
+                  <td style="border: none; text-align: center;">
+                    <img src="./img/24.png" width="366" height="200"/>
+                  </td>
+                  <td style="border: none; text-align: center;">
+                    <img src="./img/25.png" width="366" height="200"/>
+                  </td>
+              </tr>
+         </table>    
+         
+     - 프로젝트 결론 :
+       - 배운점
+         - 애플리케이션-인프라 통합 가시성 확보: Spring AOP를 통한 로깅과 CloudWatch 연동을 통해 애플리케이션부터 클러스터 레벨까지 전 구간 관찰성(Observability) 구축 역량 습득.
+         - EKS 환경의 트러블슈팅 숙달: ALB 생성 실패, IAM 권한 충돌, YAML 문법 오류 등 EKS 운영 시 빈번한 3대 이슈를 직접 진단하고 해결하며 기술적 성숙도 향상.
+         - 네트워크 격리 설계의 중요성: 전용 VPC 구축 및 서브넷 태깅 최적화를 통해 독립적이고 보안성이 강화된 클라우드 네트워크 설계 능력 배양.
+
+       - 아쉬운점
+         - 보안 강화 미흡: Ingress 레이어에 HTTPS(SSL/TLS) 인증서 적용 및 AWS WAF를 통한 외부 보안 고도화가 과제로 남음.
+         - 배포 방식의 정교화: Helm 차트 기반 관리나 GitOps(ArgoCD) 도입을 시도하지 못한 점이 아쉬움.
+         - 오토스케일링 세밀화: 기본적인 Replica 유지 외에 HPA(Horizontal Pod Autoscaler)를 통한 실시간 트래픽 기반 가변 스케일링 설정 부족.
+           <br><br>
+
 - **(2024.11.12~2024.12.18) AI/ML 모델 성능 입력 게시판 프로젝트**
      - 프로젝트 주제 : AI/ML 성능에 대하여 입력하고 이를 관리하는 게시판을 제작
      - 참여 인원 (역할) : 개인 (全) 
