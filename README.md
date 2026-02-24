@@ -28,6 +28,7 @@
 ## 🎓 Activities
 <!-- - 그노티 현장실습(인턴십) - (2025.03.04~2025.08.29)(6개월) -->
 - KT AIVLE SCHOOL 8기 (25.09.23 ~ 26.03.06(예정))
+- KT AIVLE SCHOOL 8기 스터디 에코 (25.10.01~26.02.02)(4개월) 
 - 한이음 ICT 멘토링 (24.04.01 ~ 24.10.31) (실제 수행: 24.03.14 - 2024.10.31)
 - 제 5세대 동아리 (23.09 ~ 24.03)
 
@@ -333,6 +334,168 @@
 
 
 ## 🛠 주요 프로젝트
+
+- **(2025.12.29 ~ 2026.02.20) 웹소설 IP의 지속 가능성 확보를 위한 AI 기반 통합 집필 및 IP 확장 지원 시스템 (IP.SUM)**
+
+  - 프로젝트 주제  
+    : AI 기반 웹소설 통합 집필 지원 및 IP 확장(OSMU) 관리 플랫폼 개발
+
+  - 참여 인원 (역할)  
+    : 팀 프로젝트 (7인) / **백엔드 핵심 개발 및 아키텍처 설계 담당**
+
+  - 제작 기간  
+    : 2025.12.29 ~ 2026.02.20
+
+  - 제작 의도  
+
+    - **웹소설 IP의 구조적 관리 필요성 해결**  
+      웹소설 연재가 장기화될수록 세계관·인물·사건 설정이 누적되지만, 이를 체계적으로 관리하지 못해 설정 충돌 및 확장 한계가 발생함.  
+      이를 해결하기 위해 **AI 기반 설정집(Lorebook) 자동 추출 및 정합성 검증 시스템**을 기획함.
+
+    - **IP 확장(OSMU)의 자동화 및 표준화**  
+      웹툰·드라마·게임 등 2차 저작물 기획은 높은 사업성을 지니나, 기존에는 기획자의 경험에 의존적이었음.  
+      **AI 기반 IP 확장 제안서 자동 생성 파이프라인**을 통해 IP 확장 과정을 구조화하고자 함.
+
+    - **플랫폼·운영자·작가 간 협업 구조 정립**  
+      Admin / Manager / Author 역할을 명확히 분리한 **RBAC 기반 백엔드 아키텍처**를 통해 실무 친화적 운영 환경 구축을 목표로 함.
+
+- Skils :
+
+  - Frontend :  
+    ![react](https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=white)
+    ![vite](https://img.shields.io/badge/vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+    ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white)
+    ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+    ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=flat-square)
+    ![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square)
+    ![MSW](https://img.shields.io/badge/MSW-FF6A33?style=flat-square)
+
+  - Backend :  
+    ![Java](https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+    ![SpringBoot](https://img.shields.io/badge/Spring_Boot_3.5.9-6DB33F?style=flat-square&logo=Springboot&logoColor=white)
+    ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-59666C?style=flat-square)
+    ![JDBC Template](https://img.shields.io/badge/JDBC_Template-4479A1?style=flat-square)
+    ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+    ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+    ![pgvector](https://img.shields.io/badge/pgvector-336791?style=flat-square)
+
+  - AI Integration :  
+    ![LLM](https://img.shields.io/badge/LLM_(Gemini)-000000?style=flat-square)
+    ![LangGraph](https://img.shields.io/badge/LangGraph-4B0082?style=flat-square)
+    ![Vector DB](https://img.shields.io/badge/Vector_DB_(pgvector)-2F4F4F?style=flat-square)
+    ![Spring WebFlux](https://img.shields.io/badge/Spring_WebFlux-6DB33F?style=flat-square)
+
+  - Security & Auth :  
+    ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square)
+    ![JWT](https://img.shields.io/badge/JWT_(RTR)-000000?style=flat-square)
+    ![OAuth2](https://img.shields.io/badge/OAuth2_(Naver)-3EAAAF?style=flat-square)
+
+  - AWS Cloud & Infrastructure :
+
+    - Computing :  
+      ![Amazon EC2](https://img.shields.io/badge/AWS_EC2-232F3E?style=flat-square&logo=amazonec2&logoColor=white)
+      ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+    - Networking :  
+      ![Amazon CloudFront](https://img.shields.io/badge/AWS_CloudFront-E05243?style=flat-square)
+      ![Amazon S3](https://img.shields.io/badge/AWS_S3-569A31?style=flat-square&logo=amazons3&logoColor=white)
+      ![Tailscale](https://img.shields.io/badge/Tailscale-000000?style=flat-square&logo=tailscale&logoColor=white)
+      
+  - 주요 기능 및 기술 (백엔드 중심)
+
+    - **작가(Author) 기능**
+
+      - 웹소설 회차 관리 및 집필 지원 API  
+        회차 단위 원고 CRUD 제공, AI 분석 요청을 비동기 처리하여 대용량 텍스트 처리 시 서버 부하 최소화.
+
+      - AI 설정집(Lorebook) 자동 생성 및 충돌 감지  
+        회차 텍스트 → 설정 정보 추출 → 임베딩 벡터화 → Vector DB 저장 구조 설계.  
+        신규 설정 등록 시 **코사인 유사도 기반 충돌/결합/신규 판단 로직** 구현.
+
+      - 성과  
+        - 설정 검토 및 기획 소요 시간 **약 15% 단축**
+        - 수백 화 분량 텍스트에서도 토큰 제한 없이 안정적 검색 가능 (RAG 구조)
+
+    - **운영자 / 관리자 기능**
+
+      - IP 확장(OSMU) 제안서 자동 생성  
+        LangGraph 기반 AI Agent 파이프라인 설계로 **매체별(IP별) 기획서 PDF 자동 생성**.
+
+      - DAU·작품·IP 지표 집계 시스템  
+        스케줄러 기반 통계 집계 API 설계, 관리자 대시보드에 제공.
+
+      - 성과  
+        - 기존 수작업 기획 대비 **기획서 생성 시간 80% 이상 절감**
+        - 2차 저작물 매출 비중 **7.2% → 1.4~2배 확대 가능성** 제시
+        - 연간 약 **19.1억 원(11.6%) 매출 상승 효과** 기대
+
+    - **백엔드 성능 및 구조 개선 (핵심 기여)**
+
+      - JPA + JDBC Template 혼합 전략  
+        다중 Join·통계 조회 구간에 대해 **DB View + JDBC Template 적용**,  
+        1만 건 기준 조회 속도 **약 80~90% 개선**, 메모리 사용량 감소.
+
+      - 인증/보안 고도화  
+        JWT Access/Refresh Token + **Token Rotation(RTR)** 적용,  
+        Refresh Token DB 해시 저장 및 Redis 블랙리스트로 탈취 대응.
+
+      - AI 서버 분리 아키텍처  
+        FastAPI 기반 AI 서버를 분리하고 Spring WebFlux로 비동기 연동,  
+        **AI 모델 업데이트 시 서비스 무중단 유지 가능**.
+
+  - 프론트엔드 및 협업 연계 (백엔드 관점)
+
+    - 프론트엔드에서 **TanStack Query 기반 낙관적 업데이트** 적용 시  
+      → 백엔드 트랜잭션 실패 시 롤백 가능한 응답 구조 설계.
+
+    - MSW(Mock Service Worker) 도입을 고려한 API 명세 우선 설계로  
+      → 프론트엔드 개발 병목 제거, 전체 개발 속도 **약 2배 향상**.
+
+  - 시스템 목적 및 활용 성과 요약  
+
+    - 창작 효율성  
+      : 설정 관리·기획 자동화로 창작 부담 **15% 경감**
+
+    - 사업적 가치  
+      : IP 확장 매출 비중 **1.4~2배 확대**, 연간 **19.1억 원 매출 상승 기대**
+
+    - 기술적 성과  
+      : 대용량 텍스트 처리, AI 연동, 보안·성능 최적화를 포함한  
+        **실서비스 수준의 백엔드 아키텍처 구축 경험 확보**
+
+   - 소프트웨어 구조도 :
+         <table style="border:none; width: 100%;">
+              <tr>
+                  <td style="border: none; text-align: center;">
+                     <img src="./img/26.png" width="366" height="200"/>
+                  </td>
+                  <td style="border: none; text-align: center;">  
+                     <img src="./img/27.png" width="366" height="200"/>    
+                  </td>
+              </tr>
+              <tr>
+                  <td style="border: none; text-align: center;">
+                    <img src="./img/28.png" width="366" height="200"/>
+                  </td>
+                  <td style="border: none; text-align: center;">
+                    <img src="./img/29.png" width="366" height="200"/>
+                  </td>
+              </tr>
+         </table>    
+
+  - 프로젝트 결론  
+
+    - **배운 점**
+
+      - AI·백엔드·인프라를 연결하는 실전 아키텍처 설계 역량 확보
+      - 성능 병목 구간을 식별하고 JPA 한계를 보완하는 실무적 선택 경험
+      - 보안(RTR, RBAC)과 운영 자동화를 고려한 서버 설계 관점 정립
+
+    - **아쉬운 점**
+
+      - GitOps 기반 배포 및 HPA 적용까지 확장하지 못한 점
+      - AI 결과에 대한 장기적 A/B 테스트 지표 설계 미흡
+
 - **(2025.11.17~2025.12.23) 도서관리 시스템 개발 및 자동 배포 환경 구축 프로젝트**
      - 프로젝트 주제 : AI 기반 도서 창작 플랫폼 개발 및 클라우드 네이티브 자동 배포 환경 구축
      - 참여 인원 (역할) : 팀 프로젝트 (7인) / 풀스택 개발 및 DevOps 조장 
